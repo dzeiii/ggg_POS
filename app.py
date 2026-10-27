@@ -11,7 +11,7 @@ from data_structures import LinkedListCart, AVLTree, MinHeap, HeapEntry
 APP_DIR = Path(__file__).resolve().parent
 DB_PATH = APP_DIR / "pos.db"
 
-st.set_page_config(page_title="Small Business POS", page_icon="🧾", layout="wide")
+st.set_page_config(page_title="Gulps and Grubs at the Garage", page_icon="🍹🍟", layout="wide")
 
 # ----------------------------- Database layer -----------------------------
 def connect_db():
@@ -191,13 +191,13 @@ init_db()
 ensure_cart()
 
 # ----------------------------- Sidebar / navigation -----------------------------
-st.sidebar.title("🧾 Small Business POS")
+st.sidebar.title("GULPS AND GRUBS")
 st.sidebar.caption("Inventory · Sales · Pickup queue")
 page = st.sidebar.radio("Navigation", ["Dashboard", "Products", "Checkout", "Pickup Orders", "Transaction History"])
 st.sidebar.divider()
 st.sidebar.caption("Data is stored locally in pos.db")
 
-st.title("Small Business Point-of-Sale System")
+st.title("GULPS AND GRUBS POS")
 st.caption("Python · Streamlit · SQLite · Manually implemented Linked List, AVL Tree, and Min-Heap")
 
 # ----------------------------- Dashboard -----------------------------
